@@ -16,7 +16,18 @@
 		71296A86200D403A00F8C087 /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71296A85200D403A00F8C087 /* OnboardingPageVC.swift */; };
 		71296A8B200D445B00F8C087 /* UserDefaults+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71296A8A200D445B00F8C087 /* UserDefaults+Onboarding.swift */; };
 		713662B7200E7EA100EFE23C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713662B6200E7EA100EFE23C /* Constants.swift */; };
+		E34B4B18262DE63B006CB0FF /* BoardToDeathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B4B17262DE63B006CB0FF /* BoardToDeathUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E34B4B1A262DE63C006CB0FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71296A56200D358400F8C087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71296A5D200D358400F8C087;
+			remoteInfo = BoardToDeath;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		71296A5E200D358400F8C087 /* BoardToDeath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardToDeath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		71296A85200D403A00F8C087 /* OnboardingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
 		71296A8A200D445B00F8C087 /* UserDefaults+Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Onboarding.swift"; sourceTree = "<group>"; };
 		713662B6200E7EA100EFE23C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E34B4B15262DE63B006CB0FF /* BoardToDeathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardToDeathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B4B17262DE63B006CB0FF /* BoardToDeathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardToDeathUITests.swift; sourceTree = "<group>"; };
+		E34B4B19262DE63C006CB0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		71296A5B200D358400F8C087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B4B12262DE63B006CB0FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				71296A60200D358400F8C087 /* BoardToDeath */,
+				E34B4B16262DE63B006CB0FF /* BoardToDeathUITests */,
 				71296A5F200D358400F8C087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				71296A5E200D358400F8C087 /* BoardToDeath.app */,
+				E34B4B15262DE63B006CB0FF /* BoardToDeathUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +123,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		E34B4B16262DE63B006CB0FF /* BoardToDeathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E34B4B17262DE63B006CB0FF /* BoardToDeathUITests.swift */,
+				E34B4B19262DE63C006CB0FF /* Info.plist */,
+			);
+			path = BoardToDeathUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,19 +152,42 @@
 			productReference = 71296A5E200D358400F8C087 /* BoardToDeath.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E34B4B14262DE63B006CB0FF /* BoardToDeathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B4B1E262DE63C006CB0FF /* Build configuration list for PBXNativeTarget "BoardToDeathUITests" */;
+			buildPhases = (
+				E34B4B11262DE63B006CB0FF /* Sources */,
+				E34B4B12262DE63B006CB0FF /* Frameworks */,
+				E34B4B13262DE63B006CB0FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34B4B1B262DE63C006CB0FF /* PBXTargetDependency */,
+			);
+			name = BoardToDeathUITests;
+			productName = BoardToDeathUITests;
+			productReference = E34B4B15262DE63B006CB0FF /* BoardToDeathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		71296A56200D358400F8C087 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Caleb Stultz";
 				TargetAttributes = {
 					71296A5D200D358400F8C087 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					E34B4B14262DE63B006CB0FF = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71296A5D200D358400F8C087;
 					};
 				};
 			};
@@ -150,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				71296A5D200D358400F8C087 /* BoardToDeath */,
+				E34B4B14262DE63B006CB0FF /* BoardToDeathUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +218,13 @@
 				71296A6C200D358400F8C087 /* LaunchScreen.storyboard in Resources */,
 				71296A69200D358400F8C087 /* Assets.xcassets in Resources */,
 				71296A67200D358400F8C087 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B4B13262DE63B006CB0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E34B4B11262DE63B006CB0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B4B18262DE63B006CB0FF /* BoardToDeathUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E34B4B1B262DE63C006CB0FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71296A5D200D358400F8C087 /* BoardToDeath */;
+			targetProxy = E34B4B1A262DE63C006CB0FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		71296A65200D358400F8C087 /* Main.storyboard */ = {
@@ -340,6 +419,49 @@
 			};
 			name = Release;
 		};
+		E34B4B1C262DE63C006CB0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCP72WGYNQ;
+				INFOPLIST_FILE = BoardToDeathUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ozgun1.BoardToDeathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoardToDeath;
+			};
+			name = Debug;
+		};
+		E34B4B1D262DE63C006CB0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCP72WGYNQ;
+				INFOPLIST_FILE = BoardToDeathUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ozgun1.BoardToDeathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BoardToDeath;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,6 +479,15 @@
 			buildConfigurations = (
 				71296A7C200D358400F8C087 /* Debug */,
 				71296A7D200D358400F8C087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34B4B1E262DE63C006CB0FF /* Build configuration list for PBXNativeTarget "BoardToDeathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B4B1C262DE63C006CB0FF /* Debug */,
+				E34B4B1D262DE63C006CB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
