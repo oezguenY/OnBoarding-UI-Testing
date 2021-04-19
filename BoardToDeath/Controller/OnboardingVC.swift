@@ -26,6 +26,7 @@ class OnboardingVC: UIPageViewController {
         delegate = self
         configurePageControl()
         
+        
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }

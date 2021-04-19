@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // How you get a fresh new instance of your app if you use something like userDefaults. What we are doing here is just for userDefaults, in the case of coreData all entities of coreData would have to be removed in order for the app to launch fresh with new data
         if CommandLine.arguments.contains("--uitesting") {
             resetState()
         }

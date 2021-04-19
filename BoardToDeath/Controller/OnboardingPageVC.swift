@@ -15,6 +15,8 @@ class OnboardingPageVC: UIViewController {
     @IBAction func doneBtnWasPressed(_ sender: Any) {
         userDefaults.onboardingCompleted = true
         dismiss(animated: true)
+
     }
+  
     
 }
